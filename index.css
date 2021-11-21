@@ -148,3 +148,26 @@ span {
     cursor: pointer;
     font-size: 12px;
 }
+
+
+/* THEME 2 */
+
+.theme-2-calculator-header {
+    background-color: hsl(0, 0%, 93%);
+    color: black;
+}
+.theme-2-calculator-body {
+    background-color: hsl(0, 5%, 81%);
+}
+.theme-2-button {
+    background-color: hsl(185, 42%, 37%);
+}
+
+/* THEME 3 */
+.Theme-3-calculator-header {
+    background-color: hsl(268, 71%, 12%);
+    color: white;
+}
+.theme-3-calculator-body {
+    background-color: hsl(0, 5%, 81%);
+}

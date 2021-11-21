@@ -137,19 +137,31 @@ let toggleBtn = document.getElementById('toggleButton');
 let one = document.getElementById('one')
 let two = document.getElementById('two')
 let three = document.getElementById('three')
+let clacHeader = document.getElementById('calc-header')
+let calcBody = document.getElementById('calc-body')
 
 
 function func1() {
     toggleBtn.classList.add('non-active')
     toggleBtn.classList.remove('active1')
     toggleBtn.classList.remove('active2')
+    clacHeader.classList.remove('theme-2-calculator-header')
+    calcBody.classList.remove('theme-2-calculator-body')
+    calcBody.classList.remove('theme-3-calculator-body')
+    clacHeader.classList.remove('theme-3-calculator-header')
 }
 function func2() {
     toggleBtn.classList.add('active1')
     toggleBtn.classList.remove('active2')
+    clacHeader.classList.add('theme-2-calculator-header')
+    calcBody.classList.add('theme-2-calculator-body')
+    calcBody.classList.remove('theme-3-calculator-body')
+    clacHeader.classList.remove('theme-3-calculator-header')
 }
 function func3() {
     toggleBtn.classList.add('active2')
     toggleBtn.classList.remove('toggle')
     toggleBtn.classList.remove('active1')
+    calcBody.classList.add('theme-3-calculator-body')
+    clacHeader.classList.add('theme-3-calculator-header')
 }
