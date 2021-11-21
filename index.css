@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color:  hsl(222, 26%, 31%);
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+.calculator-header {
+    display: grid;
+    grid-template-columns: 1;
+    grid-template-rows: 2;
+    background-color: hsl(224, 36%, 15%);
+    width: 300px;
+    padding: 15px;
+    font-size: 22px;
+    height: 80px;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    justify-items: end;
+}
+.calculator-body {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    width: 300px;
+    grid-gap: 4px;
+    height: 300px;
+    margin-top: 10px;
+    background-color: hsl(223, 31%, 20%);
+    padding: 10px;
+    border-radius: 5px;
+}
+#previous-operand {
+    color: rgb(102, 97, 97);
+}
+button {
+    padding: 10px 8px;
+    border-radius: 5px;
+    font-size: 20px;
+    border: none;
+    background-color: hsl(30, 25%, 89%);
+    border-bottom: 1px solid hsl(224, 28%, 35%);
+}
+
+.span-2 {
+   grid-column: span 2;
+}
+
+.reset, .del {
+    background-color: hsl(225, 21%, 49%);
+    color: hsl(0, 0, 100%);
+}
+.equals {
+    background-color: hsl(6, 63%, 50%);
+    color: hsl(0, 0, 100%);;
+}
+
+.heading-toggle {
+    display: flex;
+    margin-bottom: 2px;
+    width: 300px;
+    color: hsl(30, 25%, 89%);
+    padding: 5px;
+}
+.heading {
+    justify-self: flex-start;
+    position: relative;
+    bottom: -10px;
+}
+.toggle-btn {
+    position: relative;
+    right: -72px;
+    bottom: 0px;
+    /* border: 1px solid red; */
+    width: 150px;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.toggle {
+    width: 60px;
+    height: 15px;
+    border-radius: 10px;
+    background-color: hsl(223, 31%, 20%);
+}
+
+.non-active {
+    width: 60px;
+    height: 15px;
+    border-radius: 10px;
+    background-color: hsl(223, 31%, 20%);
+    transition: all 0.4s ease-in-out;
+}
+
+.non-active > .innercircle {
+    position: relative;
+    width: 15px;
+    height: 15px;
+    background-color: white;
+    border-radius: 50px;
+    transition: all 0.4s ease-in-out;
+}
+
+.toggle > .innercircle {
+    position: relative;
+    width: 15px;
+    height: 15px;
+    background-color: white;
+    border-radius: 50px;
+    transition: all 0.4s ease-in-out;
+}
+
+.active1 {
+    background-color: hsl(0, 5%, 81%);
+}
+
+.active1 > .innercircle {
+    left: 22px;
+    transition: all 0.4s ease-in-out;
+}
+
+.active2 {
+    background-color: hsl(268, 71%, 12%);
+}
+
+.active2 > .innercircle {
+    left: 44px;
+    transition: all 0.4s ease-in-out;
+}
+.span {
+    width: 60px;
+    display: flex;
+    justify-content: space-between;
+}
+span {
+    cursor: pointer;
+    font-size: 12px;
+}
